@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Популярность языков программирования</title>
+</head>
+<body>
+    <header>
+        <details>
+            <summary>Меню</summary>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+        </details>
+    </header>
+    <main>
+        <section>
+            <details>
+                <summary>График</summary>
+                <form>
+                    <table>
+                        <tr>
+                            <th>Значение по оси OX</th>
+                            <th>Результат</th>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="OX" value="name">Название</td>
+                            <td><input type="checkbox" name="result" value="max_rating">Максимальный рейтинг</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="OX" value="rating">Рейтинг</td>
+                            <td><input type="checkbox" name="result" value="min_rating">Минимальный рейтинг</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="OX" value="october2023">Октябрь 2023</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="OX" value="october2022">Октябрь 2022</td>
+                        </tr>
+                        
+                    </table>
+                    <button type="submit">Построить график</button>
+                </form>
+            </details>
+            <details>
+                <summary>Фильтр</summary>
+                <form>
+                    Название: <input type="text" name="name"><br>
+                    Рейтинг: от <input type="text" name="" id=""> до <input type="text" name=""><br>
+                    Октябрь 2023: от <input type="text" name="" id=""> до <input type="text" name="" id=""><br>
+                    Октябрь 2022: от <input type="text" name="" id=""> до <input type="text" name="" id=""><br>
+                    <button type="submit">Найти</button><br>
+                </form>
+            </details>
+            <details>
+                <summary>Сортировка</summary>
+                <form action="">
+                    Первый уровень: <select name="first_level" id="">
+                        <option value="name">Название</option>
+                        <option value="rating">Рейтинг</option>
+                        <option value="october2023">Октябрь 2023</option>
+                        <option value="october2022">Октябрь 2022</option>
+                    </select>
+                    по убыванию? <input type="checkbox" name="first_level_check" id=""><br>
+                    Второй уровень: <select name="second_level" id="">
+                        <option value="name">Название</option>
+                        <option value="rating">Рейтинг</option>
+                        <option value="october2023">Октябрь 2023</option>
+                        <option value="october2022">Октябрь 2022</option>
+                    </select>
+                    по убыванию? <input type="checkbox" name="second_level_check" id=""><br>
+                    Третий уровень: <select name="third_level" id="">
+                        <option value="name">Название</option>
+                        <option value="rating">Рейтинг</option>
+                        <option value="october2023">Октябрь 2023</option>
+                        <option value="october2022">Октябрь 2022</option>
+                    </select>
+                    по убыванию? <input type="checkbox" name="third_level_check" id=""><br>
+                    <button type="submit">Сортировать</button><br>
+                </form>
+            </details>
+        </section>
+        <section>
+            <table border="1">
+                <tr>
+                    <th>Название</th>
+                    <th>Рейтинг</th>
+                    <th>Октябрь 2023</th>
+                    <th>Октябрь 2022</th>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>14.85</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>12.08</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>10.67</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                
+                <tr>
+                    <td>Java</td>
+                    <td>8.92</td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>7.71</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>1.9</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>1.78</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Assembly language</td>
+                    <td>1.64</td>
+                    <td>10</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Go</td>
+                    <td>1.37</td>
+                    <td>11</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Scratch</td>
+                    <td>1.37</td>
+                    <td>12</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Delphi/Object Pascal</td>
+                    <td>1.30</td>
+                    <td>13</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>MATLAB</td>
+                    <td>1.27</td>
+                    <td>14</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Swift</td>
+                    <td>1.07</td>
+                    <td>15</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Fortran</td>
+                    <td>1.02</td>
+                    <td>16</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>R</td>
+                    <td>0.96</td>
+                    <td>17</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Kotlin</td>
+                    <td>0.96</td>
+                    <td>18</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Ruby</td>
+                    <td>0.92</td>
+                    <td>19</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Rust</td>
+                    <td>0.91</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Classic Visual Basic</td>
+                    <td>0.90</td>
+                    <td>21</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>SAS</td>
+                    <td>0.83</td>
+                    <td>22</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Ada</td>
+                    <td>0.77</td>
+                    <td>23</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>COBOL</td>
+                    <td>0.76</td>
+                    <td>24</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Prolog</td>
+                    <td>0.7</td>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Lua</td>
+                    <td>0.7</td>
+                    <td>26</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Perl</td>
+                    <td>0.64</td>
+                    <td>27</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Julia</td>
+                    <td>0.58</td>
+                    <td>28</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>0.56</td>
+                    <td>29</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>(Visual) FoxPro</td>
+                    <td>0.53</td>
+                    <td>31</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>Dart</td>
+                    <td>0.47</td>
+                    <td>31</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>Haskell</td>
+                    <td>0.46</td>
+                    <td>32</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <td>Objective-C</td>
+                    <td>0.45</td>
+                    <td>33</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Transact-SQL</td>
+                    <td>0.45</td>
+                    <td>34</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>Lisp</td>
+                    <td>0.41</td>
+                    <td>35</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>F#</td>
+                    <td>0.4</td>
+                    <td>36</td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td>GAMS</td>
+                    <td>0.39</td>
+                    <td>37</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Scala</td>
+                    <td>0.36</td>
+                    <td>38</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>VBScript</td>
+                    <td>0.35</td>
+                    <td>39</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>Logo</td>
+                    <td>0.33</td>
+                    <td>40</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>PL/SQL</td>
+                    <td>0.28</td>
+                    <td>41</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Bash</td>
+                    <td>0.27</td>
+                    <td>42</td>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <td>CFML</td>
+                    <td>0.25</td>
+                    <td>43</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>PowerShell</td>
+                    <td>0.24</td>
+                    <td>44</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <td>Solidity</td>
+                    <td>0.24</td>
+                    <td>45</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>Scheme</td>
+                    <td>0.24</td>
+                    <td>46</td>
+                    <td>41</td>
+                </tr>
+                <tr>
+                    <td>ABAP</td>
+                    <td>0.22</td>
+                    <td>47</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>X++</td>
+                    <td>0.22</td>
+                    <td>49</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <td>TypeScript</td>
+                    <td>0.2</td>
+                    <td>49</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>Awk</td>
+                    <td>0.2</td>
+                    <td>50</td>
+                    <td>53</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
